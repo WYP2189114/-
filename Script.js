@@ -1,4 +1,4 @@
-var GetCommand = '';
+var GetCommand = [''];
 function addcommend(){
     var Table_=document.getElementById("message");
     var Textarea_=document.getElementById("command");
@@ -18,15 +18,15 @@ function addcommend(){
     tr.appendChild(td1);
     tr.appendChild(td2);
     Table_.appendChild(tr);
-    GetCommand+=txtnode1.nodeValue+','+txtnode2.nodeValue+',';
-    //console.log(command);
+    GetCommand+=txtnode1.nodeValue+'∮'+txtnode2.nodeValue+'∮';
+    // 因為一般人留言應該不會打到這個符號
     k=sessionStorage.setItem('commandarr',GetCommand);
     }
     else alert('請輸入留言!');
   }//添加留言
 function getcommand(){
   // if(GetCommand.length==0)return false;
-  GetCommand = sessionStorage.getItem('commandarr').split(',');
+  GetCommand = sessionStorage.getItem('commandarr').split('∮');
     if(GetCommand.length>0){
       for(var i=0;i<GetCommand.length-1;i++){
       var Table_=document.getElementById("message");
