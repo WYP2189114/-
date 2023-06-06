@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript"src='./Script.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <title>樂團介紹:ヨルシカ</title>
+    <style>
+    </style>
+     <script>var LikeTimes=sessionStorage.getItem('likenum3');//喜歡次數
+        if(LikeTimes==null)LikeTimes=0;
+        var LikeTimesBefore = LikeTimes;
+        var DislikeTimes=sessionStorage.getItem('dislikenum3');//不喜歡次數
+        if(DislikeTimes==null)DislikeTimes=0;
+        var DislikeTimesBefore = DislikeTimes;</script>
+</head>
+<body>
+    <table id="header">
+        <tr><td><a href="./index.html"><span>主頁</span></a></td>
+        <td><a href="./Aimer.html">Aimer</a></td>
+        <td><a href="./yoasobi.html">YOASOBI</a></td>
+        <td><a href="./yorushika.html">ヨルシカ</a></td>
+        <td><a href="./minami.html">美波</a></td>
+        <td><a href="./LiSA.html">LiSA</a></td>
+    </tr></table>
+    <div id="container">
+        <div id="main">
+            <h2>樂團介紹:ヨルシカ</h2>
+            <div>
+                <img src="./media/yorushika.jpg">
+            </div>
+          <div>
+                <ul><b>簡介</b>
+                <li>Yorushika（日語：ヨルシカ Yorushika）是由作曲家n-buna與歌手Suis組成的日本搖滾樂團。
+                    該樂團於2017年建成，樂隊出道時所屬的音樂廠牌為Dwango 旗下的 U&R records。2019年6月14
+                    日以單曲《心上破了洞》（心に穴が空いた）自日本環球音樂主流出道。</li></ul>
+          </div>
+          <div>
+                <ul><b>透明感的歌聲與故事性強烈的歌詞</b>
+                <li>Yorushika的成員包括n-buna與suis。是由以往主要製作Vocaloid曲為主的n-buna和參與歌手Suis在2017年組成的樂隊。
+                    因為「不希望為音樂帶來先入為主的偏見」，所以關於這兩人的官方消息除上述外別無其他，至今仍未公布兩人的樣貌等相關資料。
+                    「Yorushika」（夜しか）這個名字取自於第一張迷你專輯《夏草使人厭煩》中最後一首歌《雲和幽靈》的歌詞：只有夜晚才能入眠
+                    （夜しかもう眠れずに）。N-buna自己認為「確切地來說Yorushika和一般的樂隊不太一樣」，在樂隊性質的基礎上，可以說「Yorushika」
+                    本身就是一件作品。作為VOCALOID創作者的n-buna創建這個樂隊的期望之一，是為了表現有別於機器音源的人類聲音的特色。</li></ul>
+          </div>
+          <div id='song'>
+                <ul><b>成名曲</b>
+                <li>言って(說吧)</li>
+                <iframe width="924" height="520" src="https://www.youtube.com/embed/F64yFFnZfkI" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                notallowfullscreen></iframe><br>
+                <table id="likebox">
+                <tr><td>言って</td>
+                    <td><input type="image" id="like"img src="./media/like.png" onclick="like_()"></td>
+                    <td><input type="image" id="dislike"img src="./media/dislike.png" onclick="dislike_()"></td></tr>
+                <tr><td>作詞：n-buna</td>
+                <td id="likenum"><script>document.write('喜歡'+LikeTimes)</script></td>
+                <td id="dislikenum"><script>document.write('不喜歡'+DislikeTimes)</script></td></tr>
+                <tr><td>作曲：n-buna</td></tr>
+                <tr><td>編曲：n-buna</td></tr>
+                <tr><td>歌：suis</td></tr>
+            </table></ul>
+          </div>
+          <div class="message">
+          <table id="message"></table></div>
+          <h6>資料來源:<a href='https://zh.wikipedia.org/wiki/Yorushika'>https://zh.wikipedia.org/wiki/Yorushika</a></h6>
+          </div>
+          <div id="recommend">
+              <table id="recommend"><tr><th><h3>★相關歌曲推薦</h3></th></tr>
+                  <tr><td>1.風を食む<a href="https://www.youtube.com/watch?v=GVrRXhS0mLs"><img src="./media/yorushika_1.jpg" ></a></td></tr>
+                  <tr><td>2.ただ君に晴れ<a href="https://www.youtube.com/watch?v=-VKIqrvVOpo"><img src="./media/yorushika_2.jpg" ></a></td></tr>
+                  <tr><td>3.だから僕は音楽を辞めた<a href="https://www.youtube.com/watch?v=KTZ-y85Erus"><img src="./media/yorushika_3.jpg" ></a></td></tr>
+                  <tr><td>4.花に亡霊<a href="https://www.youtube.com/watch?v=9lVPAWLWtWc"><img src="./media/yorushika_4.jpg" ></a></td></tr>
+                  <tr><td>5.ヒッチコック<a href="https://www.youtube.com/watch?v=t7MBzMP4OzY"><img src="./media/yorushika_5.jpg" ></a></td></tr>
+                  <tr><td>6.藍二乗<a href="https://www.youtube.com/watch?v=4MoRLTAJY_0"><img src="./media/yorushika_6.jpg" ></a></td></tr>
+                  </table>
+            </div>
+            </div> 
+            <script>
+                    function like_(){
+                        var Likenum_=document.getElementById('likenum');
+                        if(LikeTimes==LikeTimesBefore){//一個頁面只能按一次讚
+                            LikeTimes++;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum3',LikeTimes);}
+                            else {//重複按會取消讚
+                            LikeTimes--;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum3',LikeTimes);
+                            }
+                        }//計算喜歡次數
+                    function dislike_(){
+                        var Dislikenum_=document.getElementById('dislikenum');
+                        if(DislikeTimes==DislikeTimesBefore){
+                            DislikeTimes++;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum3',DislikeTimes);}
+                            else {
+                            DislikeTimes--;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum3',DislikeTimes);
+                            }
+                                }//計算不喜歡次數
+                    </script>
+</body>
+</html>

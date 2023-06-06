@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript"src='./Script.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <title>歌手介紹:美波</title>
+    <style>
+      </style>
+       <script>var LikeTimes=sessionStorage.getItem('likenum4');//喜歡次數
+        if(LikeTimes==null)LikeTimes=0;
+        var LikeTimesBefore = LikeTimes;
+        var DislikeTimes=sessionStorage.getItem('dislikenum4');//不喜歡次數
+        if(DislikeTimes==null)DislikeTimes=0;
+        var DislikeTimesBefore = DislikeTimes;</script>
+</head>
+<body>
+    <table id="header">
+        <tr><td><a href="./index.html"><span>主頁</span></a></td>
+        <td><a href="./Aimer.html">Aimer</a></td>
+        <td><a href="./yoasobi.html">YOASOBI</a></td>
+        <td><a href="./yorushika.html">ヨルシカ</a></td>
+        <td><a href="./minami.html">美波</a></td>
+        <td><a href="./LiSA.html">LiSA</a></td>
+    </tr></table>
+    <div id="container">
+        <div id="main">
+            <h2>歌手介紹:美波</h2>
+            <div>
+                <img src="./media/美波.jpg">
+            </div>
+          <div>
+                <ul><b>簡介</b>
+                <li>美波在中學時受到尾崎豐的Live刺激而開始作詞作曲。在高中時買了吉他後認真參與音樂活動。
+                    2017年，首張迷你專輯《Emotional Water》與首張迷你單曲《main actor》發行，在Tower Records的涉谷、札幌、仙台、
+                    名古屋、大阪、廣島以及福岡店限定販賣。同年8月24日，實現在20歲前舉辦個人演唱會的夢想，在shibuya eggman以《Emotional Water〜my teen finale〜》為名舉辦個人演唱會。
+                    參加由flying DOG所舉辦的「第2回flying DOG甄選會（日語：第2回フライングドッグオーディション）」並且得獎，
+                    之後在2018年2月21日以《ETERNAL BLUE》為名再次在shibuya eggman舉辦個人演唱會，並且公開正式於唱片業出道。</li></ul>
+          </div>
+          <div>
+                <ul><b>充滿爆發力及穿透力的歌喉</b>
+                <li>美波在2017年在Youtube上開始活躍，以他那充滿爆發力的嗓音，成功地獲得許多人的關注，發布了單曲《main actor》。
+                    2018年則正式宣布將於2019年正式出道，並於2019年跟唱片公司flying dog簽約出道。當年靠著《カワキヲアメク》成功地造成
+                    廣大的回響，此首歌MV目前已經達到8800萬次觀看。美波的特色在於十分有力而且傾注感情的唱腔，且大部分歌曲的歌詞都包含
+                    憂鬱，感傷的情感，完美的演藝讓人即使聽不懂日文看著翻譯的歌詞也能深刻體會其意境。
+                </li></ul>
+          </div>
+          <div id='song'>
+                <ul><b>成名曲</b>
+                <li>カワキヲアメク</li>
+                <iframe width="924" height="520" src="https://www.youtube.com/embed/0YF8vecQWYs" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                notallowfullscreen></iframe><br>
+                <table id="likebox">
+                <tr><td>カワキヲアメク</td>
+                    <td><input type="image" id="like"img src="./media/like.png" onclick="like_()"></td>
+                    <td><input type="image" id="dislike"img src="./media/dislike.png" onclick="dislike_()"></td></tr>
+                <tr><td>作詞：美波</td>
+                <td id="likenum"><script>document.write('喜歡'+LikeTimes)</script></td>
+                <td id="dislikenum"><script>document.write('不喜歡'+DislikeTimes)</script></td></tr>
+                <tr><td>作曲：美波</td></tr>
+                <tr><td>吉他：大塚巧</td></tr>
+                <tr><td>貝斯：難部 一真</td></tr>
+                <tr><td>鼓手：高清水 完太</td></tr>
+                <tr><td>歌：美波</td></tr>
+            </table></ul>
+          </div>
+          <div class="message">
+          <table id="message"></table></div>
+          <h6>資料來源:<a href='https://zh.wikipedia.org/wiki/%E7%BE%8E%E6%B3%A2_(%E5%89%B5%E4%BD%9C%E6%AD%8C%E6%89%8B)'>
+            https://zh.wikipedia.org/wiki/%E7%BE%8E%E6%B3%A2_(%E5%89%B5%E4%BD%9C%E6%AD%8C%E6%89%8B)</a>
+        <a href="https://kknews.cc/zh-tw/comic/2ko83gr.html">https://kknews.cc/zh-tw/comic/2ko83gr.html</a></h6>
+          </div>
+          <div id="recommend">
+              <table id="recommend"><tr><th><h3>★相關歌曲推薦</h3></th></tr>
+                  <tr><td>1.アメヲマツ(等待雨)<a href="https://www.youtube.com/watch?v=766qmHTc2ro"><img src="./media/minami_1.jpg" ></a></td></tr>
+                  <tr><td>2.main actor<a href="https://www.youtube.com/watch?v=jb4ybTQwcdw"><img src="./media/minami_2.jpg" ></a></td></tr>
+                  <tr><td>3.ライラック<a href="https://www.youtube.com/watch?v=GQ3V50XoLOM"><img src="./media/minami_3.jpg" ></a></td></tr>
+                  <tr><td>4.ホロネス<a href="https://www.youtube.com/watch?v=HIRiduzNLzQ"><img src="./media/minami_4.jpg" ></a></td></tr>
+                  <tr><td>5.プロローグ<a href="https://www.youtube.com/watch?v=DkAyAvKMFP4"><img src="./media/minami_5.jpg" ></a></td></tr>
+                  </table>
+            </div>
+            </div> 
+            <script>
+                 function like_(){
+                        var Likenum_=document.getElementById('likenum');
+                        if(LikeTimes==LikeTimesBefore){//一個頁面只能按一次讚
+                            LikeTimes++;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum4',LikeTimes);}
+                            else {//重複按會取消讚
+                            LikeTimes--;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum4',LikeTimes);
+                            }
+                        }//計算喜歡次數
+                    function dislike_(){
+                        var Dislikenum_=document.getElementById('dislikenum');
+                        if(DislikeTimes==DislikeTimesBefore){
+                            DislikeTimes++;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum4',DislikeTimes);}
+                            else {
+                            DislikeTimes--;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum4',DislikeTimes);
+                            }
+                                }//計算不喜歡次數
+                    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript"src='./Script.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <title>歌手介紹:Aimer</title>
+    <script>var LikeTimes=sessionStorage.getItem('likenum1');//喜歡次數
+        if(LikeTimes==null)LikeTimes=0;
+        var LikeTimesBefore = LikeTimes;
+        var DislikeTimes=sessionStorage.getItem('dislikenum1');//不喜歡次數
+        if(DislikeTimes==null)DislikeTimes=0;
+        var DislikeTimesBefore = DislikeTimes;</script>
+    <style>
+    </style>
+</head>
+<body>
+    <table id="header">
+        <tr><td><a href="./index.html"><span>主頁</span></a></td>
+        <td><a href="./Aimer.html">Aimer</a></td>
+        <td><a href="./yoasobi.html">YOASOBI</a></td>
+        <td><a href="./yorushika.html">ヨルシカ</a></td>
+        <td><a href="./minami.html">美波</a></td>
+        <td><a href="./LiSA.html">LiSA</a></td>
+    </tr></table>
+    <div id="container">
+        <div id="main">
+            <h2>歌手介紹:Aimer</h2>
+            <div>
+                <img src="./media/Aimer.jpg">
+            </div>
+          <div>
+                <ul><b>簡介</b>
+                <li>Aimer（日語：エメ，1991－）是一名日本女歌手，熊本縣出身。其個人資料未對外公開披露。
+                    藝名Aimer取自法語詞彙「愛」，作詞時常以aimerrhythm署名。2011年以單曲
+                    《六等星の夜/悲しみはオーロラに/TWINKLE TWINKLE LITTLE STAR》正式出道，
+                    其唱片由日本索尼音樂娛樂下屬公司SME Records發行，經紀公司則隸屬於FOURseam。</li></ul>
+          </div>
+          <div>
+                <ul><b>獨樹一幟的歌聲</b>
+                <li>由於其父親曾在樂團中擔任貝斯手，Aimer從小就成長在十分優渥的音樂環境中，
+                    用爵士樂和藍調打下了良好的基礎。她小學時開始學習鋼琴，並經常在家練習模仿
+                    椎名林檎和宇多田光的歌喉。中學時由於崇拜艾薇兒·拉維尼，開始練習吉他，
+                    並結合其海外生活的經驗，在英文作詞上亦投注了非常大的心力。十五歲時，因為
+                    過度使用喉嚨導致聲帶發痛，被迫採用了沉默治療法。在長達約半年的沉默過後
+                    ，確立了自己想要成為歌手的意願，並結合著後續的康復訓練，確立了現在的唱法和音質
+                    。當時的聲帶損傷直到目前仍未痊癒，又有主治醫師告知Aimer完全康復會導致聲色變化
+                    ，因此她為了保住現在的音質，保持著其聲帶目前的狀態。日本音響研究所所長鈴木松美
+                    先生認為，「Aimer的聲音中振幅起伏與頻率起伏同時發生，是非常之稀少的聲音」。
+          </div>
+          <div id='song'>
+                <ul><b>成名曲</b>
+                <li>六等星の夜</li>
+                <iframe width="924" height="520" src="https://www.youtube.com/embed/1B9rLGfc9Vo" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                notallowfullscreen></iframe><br>
+                <table id="likebox">
+                <tr><td>六等星の夜 Magic Blue ver.</td>
+                    <td><input type="image" id="like"img src="./media/like.png" onclick="like_()"></td>
+                    <td><input type="image" id="dislike"img src="./media/dislike.png" onclick="dislike_()"></td></tr>
+                <tr><td>作詞：aimerrythm</td>
+                <td id="likenum"><script>document.write('喜歡'+LikeTimes)</script></td>
+                <td id="dislikenum"><script>document.write('不喜歡'+DislikeTimes)</script></td></tr>
+                <tr><td>作曲：飛內將大</td></tr>
+                <tr><td>編曲：玉井健二・百田留衣</td></tr>
+                <tr><td>歌：Aimer</td></tr>
+            </table></ul>
+          </div>
+          <div class="message">
+          <table id="message"></table></div>
+          <h6>資料來源:<a href='https://zh.wikipedia.org/wiki/Aimer'>https://zh.wikipedia.org/wiki/Aimer</a></h6>
+          </div>
+          <div id="recommend">
+              <table id="recommend"><tr><th><h3>★相關歌曲推薦</h3></th></tr>
+                  <tr><td>1.カタオモイ(單相思)<a href="https://www.youtube.com/watch?v=zSOJk7ggJts"><img src="./media/Aimer_1.jpg" ></a></td></tr>
+                  <tr><td>2.茜さす<a href="https://www.youtube.com/watch?v=bN1t3-2X3aM"><img src="./media/Aimer_2.jpg" ></a></td></tr>
+                  <tr><td>3.ninelie(with EGOIST)<a href="https://www.youtube.com/watch?v=j9ypaPVzrbE"><img src="./media/Aimer_3.jpg" ></a></td></tr>
+                  <tr><td>4.Brave Shine<a href="https://www.youtube.com/watch?v=VQ2D8rZljwU"><img src="./media/Aimer_4.jpg" ></a></td></tr>
+                  <tr><td>5.StarRingChild<a href="https://www.youtube.com/watch?v=69w7p05W8HA"><img src="./media/Aimer_5.jpg" ></a></td></tr>
+                  <tr><td>6.Polaris<a href="https://www.youtube.com/watch?v=j9GiOS9G5ts"><img src="./media/Aimer_6.jpg" ></a></td></tr>
+                  </table>
+            </div>
+            </div> 
+            <script>
+                     function like_(){
+                        var Likenum_=document.getElementById('likenum');
+                        if(LikeTimes==LikeTimesBefore){//一個頁面只能按一次讚
+                            LikeTimes++;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum1',LikeTimes);}
+                            else {//重複按會取消讚
+                            LikeTimes--;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum1',LikeTimes);
+                            }
+                        }//計算喜歡次數
+                    function dislike_(){
+                        var Dislikenum_=document.getElementById('dislikenum');
+                        if(DislikeTimes==DislikeTimesBefore){
+                            DislikeTimes++;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum1',DislikeTimes);}
+                            else {
+                            DislikeTimes--;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum1',DislikeTimes);
+                            }
+                                }//計算不喜歡次數
+                    </script>
+</body>
+</html>

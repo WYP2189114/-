@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script tyoe="text/javascript"src='./Script.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <title>樂團介紹:YOASOBI</title>
+    <script>var LikeTimes=sessionStorage.getItem('likenum2');//喜歡次數
+        if(LikeTimes==null)LikeTimes=0;
+        var LikeTimesBefore = LikeTimes;
+        var DislikeTimes=sessionStorage.getItem('dislikenum2');//不喜歡次數
+        if(DislikeTimes==null)DislikeTimes=0;
+        var DislikeTimesBefore = DislikeTimes;</script>
+    <style>
+    </style>
+</head>
+<body>
+    <table id="header">
+        <tr><td><a href="./index.html"><span>主頁</span></a></td>
+        <td><a href="./Aimer.html">Aimer</a></td>
+        <td><a href="./yoasobi.html">YOASOBI</a></td>
+        <td><a href="./yorushika.html">ヨルシカ</a></td>
+        <td><a href="./minami.html">美波</a></td>
+        <td><a href="./LiSA.html">LiSA</a></td>
+    </tr></table>
+    <div id="container">
+        <div id="main">
+            <h2>歌手介紹:YOASOBI</h2>
+            <div>
+                <img src="./media/yoasobi.jpg">
+            </div>
+          <div>
+                <ul><b>簡介</b>
+                <li>YOASOBI（片假名：ヨアソビ）是日本雙人音樂組合，由使用VOCALOID的作曲家-Ayase
+                    與創作歌手ikura（幾田りら）組成。其特色為將在日本索尼音樂娛樂所經營的小說和
+                    插畫網站monogatary.com中的原作小說音樂化。</li></ul>
+          </div>
+          <div>
+                <ul><b>將小說、音樂、圖像合而為一</b>
+                <li>正如上面所述，YOASOBI的每一首歌曲背後都有著小說的故事背影，不只是在詮釋一首歌，更是在
+                    訴說著故事，例如第一章的《夜に駆ける》（奔向夜空）以星野舞夜的獲獎小說《タナトスの誘惑》
+                    （桑納托斯的誘惑）為原型、第二章《あの夢をなぞって》（描摹那個夢）則是いしき蒼太所寫的
+                    《夢の雫と星の花》（夢想的水滴與繁星的花朵），透過閱讀小說及聆聽歌曲更能體會其想表達的故事。
+                    尤其是第一章的《夜に駆ける》，不僅一個月就突破一百萬觀看，現在更是已經達到1.2億的觀看次數。
+                </li></ul>
+          </div>
+          <div id='song'>
+                <ul><b>成名曲</b>
+                <li>夜に駆ける(向夜晚奔去)</li>
+                <iframe width="924" height="520" src="https://www.youtube.com/embed/x8VYWazR5mE" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                notallowfullscreen></iframe>
+                <table id="likebox">
+                    <tr><td>夜に駆ける</td>
+                        <td><input type="image" id="like"img src="./media/like.png" onclick="like_()"></td>
+                        <td><input type="image" id="dislike"img src="./media/dislike.png" onclick="dislike_()"></td></tr>
+                    <tr><td>Music : Ayase</td>
+                    <td id="likenum"><script>document.write('喜歡'+LikeTimes)</script></td>
+                    <td id="dislikenum"><script>document.write('不喜歡'+DislikeTimes)</script></td></tr>
+                    <tr><td>Vocal : ikura</td></tr>
+                    <tr><td>Animation : 藍にいな</td></tr>
+                    <tr><td>原作：「タナトスの誘惑」(星野舞夜 著)</td></tr>
+                </table></ul>
+          </div>
+          <h6>資料來源:<br><a href='https://zh.wikipedia.org/wiki/YOASOBI'>https://zh.wikipedia.org/wiki/Aimer</a><br>
+                       <a href='https://www.likejapan.com/entertainment/yoasobi-introduction/'>https://www.likejapan.com/entertainment/yoasobi-introduction/</a></h6>
+          </div>
+          <div id="recommend">
+              <table id="recommend"><tr><th><h3>★相關歌曲推薦</h3></th></tr>
+                  <tr><td>1.群青<a href="https://www.youtube.com/watch?v=Y4nEEZwckuU"><img src="./media/yoasobi_1.jpg" ></a></td></tr>
+                  <tr><td>2.ハルジオン<a href="https://www.youtube.com/watch?v=kzdJkT4kp-A"><img src="./media/yoasobi_2.jpg" ></a></td></tr>
+                  <tr><td>3.たぶん<a href="https://www.youtube.com/watch?v=8iuLXODzL04"><img src="./media/yoasobi_3.png" ></a></td></tr>
+                  <tr><td>4.あの夢をなぞっで<a href="https://www.youtube.com/watch?v=sAuEeM_6zpk"><img src="./media/yoasobi_4.jpg" ></a></td></tr>
+                  </table>
+            </div>
+            </div> 
+        <script>
+                function like_(){
+                        var Likenum_=document.getElementById('likenum');
+                        if(LikeTimes==LikeTimesBefore){//一個頁面只能按一次讚
+                            LikeTimes++;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum2',LikeTimes);}
+                            else {//重複按會取消讚
+                            LikeTimes--;
+                            Likenum_.innerText='喜歡 '+LikeTimes;
+                            sessionStorage.setItem('likenum2',LikeTimes);
+                            }
+                        }//計算喜歡次數
+                    function dislike_(){
+                        var Dislikenum_=document.getElementById('dislikenum');
+                        if(DislikeTimes==DislikeTimesBefore){
+                            DislikeTimes++;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum2',DislikeTimes);}
+                            else {
+                            DislikeTimes--;
+                            Dislikenum_.innerText='不喜歡 '+DislikeTimes;
+                            sessionStorage.setItem('dislikenum2',DislikeTimes);
+                            }
+                                }//計算不喜歡次數
+        </script>
+</body>
+</html>

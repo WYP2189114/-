@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音樂集散地</title>
+    <script src='./Script.js'></script>
+    <link rel="stylesheet" type="text/css" href="./Flat-UI-master\Flat-UI-master\dist\css/flat_ui.css">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+        div#photoCarousel{float:top;width:100%;height:56.25%;}
+        body{visibility: hidden;
+            background-image:url(./media/bgimg2.jpg);
+            background-size: contain;
+     }  
+    </style>
+    <script>var i;</script>
+</head>
+<body onload="check()">
+  <!-- <div id='wrap'>
+    <div id='header'>
+    <table id="header">
+    <tr><td><a href="./index.html"><span>音樂集散地</span></a></td>
+    <td><a href="./Aimer.html"><span>Aimer</span></a></td>
+    <td><a href="./yoasobi.html"><span>YOASOBI</span></a></td>
+    <td><a href="./yorushika.html"><span>ヨルシカ</span></a></td>
+    <td><a href="./minami.html"><span>美波</span></a></td>
+    <td><a href="./LiSA.html"><span>LiSA</span></a></td>
+</tr></table></div> -->
+<div id="wrap">
+<nav class="navbar navbar-inverse navbar-expand-lg" role="navigation">
+  <div class="collapse navbar-collapse" id="navbar-collapse-01">
+    <a class="navbar-brand" href="#">音樂集散地</a>
+      <ul class="nav navbar-nav mr-auto">
+        <!-- <li><a href="./index.html"><span>音樂集散地</span></a></li> -->
+        <li><a href="./Aimer.html"><span>Aimer</span></a></li>
+        <li><a href="./yoasobi.html"><span>YOASOBI</span></a></li>
+        <li><a href="./yorushika.html"><span>ヨルシカ</span></a></li>
+        <li><a href="./minami.html"><span>美波</span></a></li>
+        <li><a href="./LiSA.html"><span>LiSA</span></a></li>
+</ul></nav></div>
+    <!-- 圖片輪播 -->
+    <div id="photoCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" >
+    <!-- 瀏覽控制 --> 
+    <ol class="carousel-indicators" style="margin-top:10px;">
+      <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#photoCarousel" data-slide-to="1"></li>
+      <li data-target="#photoCarousel" data-slide-to="2"></li>
+      <li data-target="#photoCarousel" data-slide-to="3"></li>
+      <li data-target="#photoCarousel" data-slide-to="4"></li>
+    </ol>
+    
+    <!-- 建立圖片清單 -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./media/Aimer.jpg">
+      </div>
+      <div class="item">
+        <img src="./media/yoasobi.jpg">
+      </div>
+      <div class="item">
+        <img src="./media/yorushika.jpg">
+      </div>
+      <div class="item">
+        <img src="./media/美波.jpg">
+      </div>
+      <div class="item">
+        <img src="./media/LiSA.jpg">
+      </div>
+    <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a>
+  </div>
+    </div>
+    <div id="container">
+      <div id="main">
+        <h2>本站特色</h2>
+        <div id='feature'>
+          <div type="button" data-toggle="collapse" data-target="#rank" aria-expanded="false" aria-controls="rank"><b><ul>最新熱門日文歌曲排行榜</b>
+            <li>告訴你最新最火熱的日文歌曲，點這讓你知道現在大家都聽甚麼歌</li></ul></div>
+              <div class='collapse' id='rank'>
+                <ol>
+                  <li>炎 LiSA</li>
+                  <li>紅蓮華 LiSA</li>
+                  <li>再会 LiSAxUru</li>
+                  <li>夜に駆ける YOASOBI</li>
+                  <li>lemon 米津玄師</li>
+                  <li>迴迴奇譚 Eve</li>
+                  <li>打上花火 米津玄師</li>
+                  <h6>資料來源:KKBOX風雲榜 資料可能有所變動
+                    <a href='https://kma.kkbox.com/charts/daily/song?terr=tw&lang=tc&cate=308'>
+                      <button class='btn btn-info'>完整排行榜請點這</button></a></h6>
+                </ol>
+            </li>
+          </div>
+    <div>
+          <ul><a href="./留言討論區.html"><b>
+            討論區</b></a>
+          <li>點這可以讓你找到同好</li></ul>
+    </div>
+    <div>
+      <div type="button" data-toggle="collapse" data-target="#list" aria-expanded="false" aria-controls="list"><b><ul>歌手簡介都在這</b>
+        <li>最近聽到某一首歌覺得很好聽 想知道歌手的生平和其他歌曲?</li></ul></div>
+          <div class='collapse' id='list'>
+            <ul>
+              <li><a href='./Aimer.html'>Aimer</a></li>
+              <li><a href='./LiSA.html'>LiSA</a></li>
+              <li><a href='./yoasobi.html'>YOASOBI</a></li>
+              <li><a href='./yorushika.html'>Yorushika</a></li>
+              <li><a href='./美波.html'>美波</a></li>
+            </ul>
+        </li>
+    </div>
+    </div>
+    <div>
+      <ul><b><a href="./小測驗.html">日文歌小測驗</b></a>
+      <li>進來測試一下你對日本歌手和日文歌的了解吧!
+      </li></ul>
+    </div>
+  </div>
+    </div>
+    <div id="recommend">
+        <table id="recommend"><tr><th><h3>★站長推薦</h3></th></tr>
+            <tr><td>1.LiSA 炎<a href="https://www.youtube.com/watch?v=4DxL6IKmXx4"><img src="./media/lisa_6.png" ></a></td></tr>
+            <tr><td>2.YOASOBI 夜に駆ける<a href="https://www.youtube.com/watch?v=x8VYWazR5mE"><img src="./media/yorunikakeru.jpg" ></a></td></tr>
+            <tr><td>3.美波 アメヲマツ。<a href='https://www.youtube.com/watch?v=766qmHTc2ro'><img src="./media/minami_1.jpg" ></a></td></tr>
+            </table>
+      </div>
+      </div>
+      <div id='gif'>
+        <div id='0'><img src='./media/megumi.gif'></div>
+      </div>
+      </div> 
+      <script>
+        $('div#main a').css('color','black');
+        $('div#feature div').each(function()
+        {
+          $(this).mouseenter(function()
+          {
+            $(this).css('background-color','#87ceeb');
+            $(this).css('color','black');
+          })
+        })
+        $('div#feature div').each(function()
+        {
+          $(this).mouseleave(function()
+          {
+            $(this).css('background-color','transparent');
+          })
+        })
+        function check(){
+          if(sessionStorage.getItem('visit')!=1){
+            $('body').css('visibility','hidden');
+          var yes=confirm('按確定如果你願意聽日文歌');
+          if(yes){
+            alert('你很棒!');
+            $('body').css('visibility','visible');
+            i=1;
+            visit=sessionStorage.setItem('visit',i);
+          }
+          else{
+            alert('我再問你一次^ ^');
+            check();
+          }
+        }
+        else {$('body').css('visibility','visible');
+              return false;}
+      }
+         /* document.write(JSON.parse(sessionStorage.getItem('commandstr'),'&').length);*/
+      </script>
+</body>
+</html>
